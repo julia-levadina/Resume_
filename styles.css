@@ -661,3 +661,21 @@ a {
     width: 100%;
   }
 }
+
+.project-card__meta {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-card__meta span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+}
