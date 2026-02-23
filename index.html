@@ -2,258 +2,330 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuliia Levadina | Portfolio</title>
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
+      name="description"
+      content="Portfolio of Yuliia Levadina — UX/UI and programming projects, web development, and user-centered design."
     />
-    <title>Resume</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header>
-      <!-- User Navigation -->
-
+    <!-- Header / Navigation -->
+    <header class="site-header">
       <div class="container">
-        <nav class="user-nav">
+        <nav class="user-nav" aria-label="Main navigation">
+          <a class="brand" href="#home">YL</a>
+
           <ul class="user-menu list">
-            <li class="user-menu__item">
-              <a class="user-menu__link" href="#home">Home</a>
-            </li>
-            <li class="user-menu__item">
-              <a class="user-menu__link" href="#about_me">About me</a>
-            </li>
-            <li class="user-menu__item">
-              <a class="user-menu__link" href="#skills">Skills</a>
-            </li>
-            <li class="user-menu__item">
-              <a class="user-menu__link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="user-menu__item">
-              <a class="user-menu__link" href="#contacts"> Contacts</a>
-            </li>
+            <li class="user-menu__item"><a class="user-menu__link" href="#home">Home</a></li>
+            <li class="user-menu__item"><a class="user-menu__link" href="#about">About</a></li>
+            <li class="user-menu__item"><a class="user-menu__link" href="#skills">Skills</a></li>
+            <li class="user-menu__item"><a class="user-menu__link" href="#portfolio">Projects</a></li>
+            <li class="user-menu__item"><a class="user-menu__link" href="#contacts">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <!-- Home section -->
-
-      <section class="section-home" id="home">
-        <div class="container">
-          <div class="section-home__header">
-            <h1 class="section-home__title">Julia Levadina</h1>
-            <p class="section-home__text">
-              Future programmer<br />15 years old
+      <!-- Hero -->
+      <section class="hero" id="home">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow">UofT Student • Cognitive Science + Stats/Math</p>
+            <h1 class="hero__title">Yuliia Levadina</h1>
+            <p class="hero__subtitle">
+              I design for people and build with code.
             </p>
+            <p class="hero__description">
+              I’m building a portfolio at the intersection of UX/UI, web development,
+              and problem-solving. I combine user empathy from real technical support
+              experience with front-end and software skills.
+            </p>
+
+            <div class="hero__buttons">
+              <a class="btn btn--primary" href="#portfolio">View Projects</a>
+              <a class="btn btn--secondary" href="#contacts">Contact Me</a>
+            </div>
+
+            <ul class="hero__highlights list">
+              <li>UX/UI Thinking</li>
+              <li>Frontend Development</li>
+              <li>Programming Foundations</li>
+            </ul>
           </div>
-          <img
-            class="section-home__img"
-            src="./images/home.jpg"
-            alt=""
-            width="945"
-          />
+
+          <div class="hero__image-wrap">
+            <img
+              class="hero__image"
+              src="./images/home.jpg"
+              alt="Portrait of Yuliia Levadina"
+            />
+          </div>
         </div>
       </section>
 
-      <!-- About section -->
-
-      <section class="section-about" id="about_me">
+      <!-- About -->
+      <section class="section section--muted" id="about">
         <div class="container">
-          <h2 class="section-title">About me</h2>
-          <div class="section-about__wrapper">
-            <img
-              class="section-about__img"
-              src="./images/IMG_4681.JPG"
-              width="450"
-              alt=""
-            />
-            <div class="section-about__text">
-              <p class="section-about__paragraph">
-                I am a motivated and creative student seeking a job in the 
-                Information Technology area to gain experience for a future career.
+          <div class="section-heading">
+            <p class="section-heading__eyebrow">About</p>
+            <h2 class="section-title">A little about me</h2>
+            <p class="section-heading__text">
+              I’m a University of Toronto student interested in technology roles where I can combine
+              UX/UI thinking, clear communication, and coding skills.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-card__image-wrap">
+              <img
+                class="about-card__image"
+                src="./images/IMG_4681.JPG"
+                alt="Yuliia Levadina"
+              />
+            </div>
+
+            <div class="about-card__content">
+              <p>
+                My background combines technical curiosity, creativity, and user-facing experience.
+                I enjoy building digital experiences that are both visually clear and practical to use.
               </p>
-              <p class="section-about__paragraph">
-                Key skills include:
+
+              <p>
+                Through study and projects, I’ve developed a foundation in web development and programming.
+                Through real support work, I’ve learned how users think, where friction appears, and how important
+                clear systems are.
               </p>
-              <p class="section-about__paragraph">
-                Fast learner - always ready for new information and tasks. <br>
-				Photographer/video editor - amazing results in these areas. <br>
-				Can use digital devices freely. <br>
-				Fluently speak 3 languages - English, Ukrainian, and Russian. 
-              </p>
+
+              <div class="about-card__grid">
+                <div class="info-pill">
+                  <h3>Strengths</h3>
+                  <p>Fast learner • Organized • Strong communicator • Detail-oriented</p>
+                </div>
+                <div class="info-pill">
+                  <h3>Creative Skills</h3>
+                  <p>Photography • Video editing • Visual communication</p>
+                </div>
+                <div class="info-pill">
+                  <h3>Languages</h3>
+                  <p>English • Ukrainian • Russian (fluent), French (beginner)</p>
+                </div>
+                <div class="info-pill">
+                  <h3>Goal</h3>
+                  <p>UX/UI, frontend, software, and tech-focused internship opportunities</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!--  Skills section -->
-
-      <section class="section-skills" id="skills">
+      <!-- Skills -->
+      <section class="section" id="skills">
         <div class="container">
-          <h2 class="section-title">Skills</h2>
-          <ul class="section-skills__list list">
-            <li class="section-skills__item">
-              <img
-                class="section-skills__img"
-                src="./images/html.jpg"
-                alt=""
-              />
-              <span class="section-skills__title"
-                >HTML</span
-              >
-              <div class="section-skills__rating">
-                <span class="section-skills__rating--active"></span>
-                <span class="section-skills__rating--active"></span>
-                <span class="section-skills__rating--active"></span>
-                <span class="section-skills__rating--active"></span>
-                <span class="section-skills__rating--inactive"></span>
-              </div>
-            </li>
-            <li class="section-skills__item">
-              <img
-                class="section-skills__img"
-                src="./images/css.png"
-                alt=""
-              />
-              <span class="section-skills__title"
-                >CSS</span
-              >
-              <div class="section-skills__rating">
-                <span class="section-skills__rating--active"></span>
-                <span class="section-skills__rating--active"></span>
-                <span class="section-skills__rating--active"></span>
-                <span class="section-skills__rating--active"></span>
-                <span class="section-skills__rating--inactive"></span>
-              </div>
-           
-            </li>
-            <li class="section-skills__item">
-              <img
-                class="section-skills__img"
-                src="./images/js.png"
-                alt=""
-              />
-              <span class="section-skills__title"
-                >JAVA <br />
-                SCRIPT</span
-              >
-              <div class="section-skills__rating">
-                <span class="section-skills__rating--active"></span>
-                <span class="section-skills__rating--active"></span>
-                <span class="section-skills__rating--active"></span>
-                <span class="section-skills__rating--active"></span>
-                <span class="section-skills__rating--inactive"></span>
-              </div>
-            </li>
-            <!-- <li class="section-skills__item">
-              <img
-                class="section-skills__img"
-                src="./images/figma.png"
-                alt=""
-              />
-              <span class="section-skills__title">
-                Figma <br />
-                &nbsp;
-              </span>
-              <div class="section-skills__rating">
-                <span class="section-skills__rating--active"></span>
-                <span class="section-skills__rating--active"></span>
-                <span class="section-skills__rating--active"></span>
-                <span class="section-skills__rating--active"></span>
-                <span class="section-skills__rating--active"></span>
-              </div>
-            </li> -->
-          </ul>
+          <div class="section-heading">
+            <p class="section-heading__eyebrow">Skills</p>
+            <h2 class="section-title">What I work with</h2>
+            <p class="section-heading__text">
+              A mix of design thinking, front-end implementation, and technical problem-solving.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3 class="skill-card__title">UX/UI & Product Thinking</h3>
+              <ul class="skill-card__list list">
+                <li>User-centered thinking</li>
+                <li>Usability-focused layouts</li>
+                <li>Visual hierarchy</li>
+                <li>Responsive interface design</li>
+                <li>Clear information structure</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <h3 class="skill-card__title">Programming & Web</h3>
+              <ul class="skill-card__list list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <h3 class="skill-card__title">Tools & Workflow</h3>
+              <ul class="skill-card__list list">
+                <li>Google Workspace</li>
+                <li>Microsoft Office 365</li>
+                <li>Adobe Creative Suite</li>
+                <li>Canva</li>
+                <li>Figma</li>
+                <li>Documentation & troubleshooting</li>
+              </ul>
+            </article>
+          </div>
+
+          <!-- Optional visual skill badges -->
+          <div class="badge-row" aria-label="Technology tags">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Python</span>
+            <span class="badge">Java</span>
+            <span class="badge">Responsive Design</span>
+            <span class="badge">UX/UI</span>
+            <span class="badge">Problem Solving</span>
+          </div>
         </div>
       </section>
 
-      <!-- Portfolio section-->
-
-      <section class="section-portfolio" id="portfolio">
+      <!-- Projects / Portfolio -->
+      <section class="section section--muted" id="portfolio">
         <div class="container">
-          <h2 class="section-title">Portfolio</h2>
-           <button class="">	<a style="background-color: grey; color: white; padding: 7px 10px; font-size: 50px; align-content: center; "
-   target="_blank" href="./gallery/index_1614357076.html">Gallery</a> </button> 
-          <br>
-          <br>
-        
-          <img
-            class="section-portfolio__img"
-            src="./images/ecology.png"
-            width="945"
-            alt=""
-          />
+          <div class="section-heading">
+            <p class="section-heading__eyebrow">Portfolio</p>
+            <h2 class="section-title">Projects & Case Studies</h2>
+            <p class="section-heading__text">
+              A selection of websites and projects that reflect both design choices and implementation skills.
+            </p>
+          </div>
 
-          <a class="section-portfolio__link" href=""
-            >Ecology</a
-          >
-          <img
-            class="section-portfolio__img"
-            src="./images/uniquity.png"
-            width="945"
-            alt=""
-          />
+          <div class="portfolio-grid">
+            <article class="project-card">
+              <div class="project-card__image-wrap">
+                <img
+                  class="project-card__image"
+                  src="./images/ecology.png"
+                  alt="Ecology website project preview"
+                />
+              </div>
+              <div class="project-card__content">
+                <p class="project-card__tag">Web Design • Frontend</p>
+                <h3 class="project-card__title">Ecology</h3>
+                <p class="project-card__description">
+                  Website project focused on clean structure, visual balance, and readability.
+                </p>
+                <div class="project-card__actions">
+                  <a class="project-link" href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                  <a class="project-link project-link--ghost" href="#" target="_blank" rel="noopener noreferrer">Case Study</a>
+                </div>
+              </div>
+            </article>
 
-          <a class="section-portfolio__link" href=""
-            >Uniquity</a
-          >
-          <img
-            class="section-portfolio__img"
-            src="./images/tourism.png"
-            width="945"
-            alt=""
-          />
+            <article class="project-card">
+              <div class="project-card__image-wrap">
+                <img
+                  class="project-card__image"
+                  src="./images/uniquity.png"
+                  alt="Uniquity website project preview"
+                />
+              </div>
+              <div class="project-card__content">
+                <p class="project-card__tag">UI Layout • Frontend</p>
+                <h3 class="project-card__title">Uniquity</h3>
+                <p class="project-card__description">
+                  Interface-focused website with emphasis on layout consistency and user-friendly presentation.
+                </p>
+                <div class="project-card__actions">
+                  <a class="project-link" href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                  <a class="project-link project-link--ghost" href="#" target="_blank" rel="noopener noreferrer">Case Study</a>
+                </div>
+              </div>
+            </article>
 
-          <a class="section-portfolio__link" href=""
-            >Tourism</a
-          >
-         
+            <article class="project-card">
+              <div class="project-card__image-wrap">
+                <img
+                  class="project-card__image"
+                  src="./images/tourism.png"
+                  alt="Tourism website project preview"
+                />
+              </div>
+              <div class="project-card__content">
+                <p class="project-card__tag">Responsive Web • UX/UI</p>
+                <h3 class="project-card__title">Tourism</h3>
+                <p class="project-card__description">
+                  Travel-oriented page design with a focus on content hierarchy, clarity, and engagement.
+                </p>
+                <div class="project-card__actions">
+                  <a class="project-link" href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                  <a class="project-link project-link--ghost" href="#" target="_blank" rel="noopener noreferrer">Case Study</a>
+                </div>
+              </div>
+            </article>
 
+            <article class="project-card project-card--accent">
+              <div class="project-card__content">
+                <p class="project-card__tag">Creative Work</p>
+                <h3 class="project-card__title">Photo / Design Gallery</h3>
+                <p class="project-card__description">
+                  A collection of visual work that supports my design sense, composition, and creative direction.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="./gallery/index_1614357076.html"
+                    >Open Gallery</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </main>
 
-
-    <!-- Footer -->
-
+    <!-- Footer / Contact -->
     <footer class="footer" id="contacts">
       <div class="container">
-        <h2 class="footer__title">Contacts</h2>
-        <ul class="footer__list list">
-          <li class="footer__item">
-            <a class="footer__icon" href ="https://www.linkedin.com/in/yuliia-levadina/">
-              <img src="./images/linkedin.png" alt="https://www.linkedin.com/in/yuliia-levadina/"/>
-            </a>
-          </li>
-          <li class="footer__item">
+        <div class="footer__card">
+          <div class="footer__top">
+            <div>
+              <p class="section-heading__eyebrow">Contact</p>
+              <h2 class="footer__title">Let’s connect</h2>
+              <p class="footer__subtitle">
+                Open to internship and entry-level opportunities in UX/UI, frontend, and technology-focused roles.
+              </p>
+            </div>
+
+            <a class="btn btn--primary" href="mailto:julialevadina@gmail.com">Email Me</a>
+          </div>
+
+          <ul class="footer__links list">
             <li class="footer__item">
-              <a class="footer__icon" href ="https://www.instagram.com/_levlyju_/">
-                <img src="./images/instagram.png" alt="https://www.instagram.com/_levlyju_/" />
+              <a class="footer__link" href="https://www.linkedin.com/in/yuliia-levadina/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
               </a>
             </li>
-          </li>
-          <li class="footer__item">
             <li class="footer__item">
-              <a class="footer__icon" href ="https://www.behance.net/">
-                <img src="./images/behance.png" alt="" />
+              <a class="footer__link" href="https://www.instagram.com/_levlyju_/" target="_blank" rel="noopener noreferrer">
+                Instagram
               </a>
             </li>
-          </li>
-          <li class="footer__item">
             <li class="footer__item">
-              <a class="footer__icon" href ="https://drive.google.com/file/d/1cpp12oKxpdWzD43-aPiedMkAdGHqeioi/view?usp=sharing">
-                <img src="./images/dribble.png" alt="https://drive.google.com/file/d/1cpp12oKxpdWzD43-aPiedMkAdGHqeioi/view?usp=sharing" />
+              <a class="footer__link" href="https://drive.google.com/file/d/1cpp12oKxpdWzD43-aPiedMkAdGHqeioi/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                Resume (Drive)
               </a>
             </li>
-          </li>
-        </ul>
+          </ul>
+
+          <p class="footer__bottom">
+            © <span id="year">2026</span> Yuliia Levadina. Built with HTML & CSS.
+          </p>
+        </div>
       </div>
     </footer>
   </body>
